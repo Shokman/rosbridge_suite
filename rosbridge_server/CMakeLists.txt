@@ -8,6 +8,8 @@ catkin_python_setup()
 catkin_package()
 
 install(PROGRAMS
+  scripts/rosbridge_websocket_connection.py
+  scripts/rosbridge_websocket_connection
   scripts/rosbridge_websocket.py
   scripts/rosbridge_websocket
   scripts/rosbridge_tcp.py
@@ -16,6 +18,7 @@ install(PROGRAMS
 )
 
 install(FILES
+  launch/rosbridge_websocket_connection.launch
   launch/rosbridge_websocket.launch
   launch/rosbridge_tcp.launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
